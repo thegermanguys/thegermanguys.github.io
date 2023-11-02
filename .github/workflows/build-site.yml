@@ -11,6 +11,11 @@ jobs:
       DIST_DIR: "$BUILD_DIR/dist"
 
     steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: "recursive"
+
       - name: copy public files
         run: |
           mkdir -p $BUILD_DIR $DIST_DIR
