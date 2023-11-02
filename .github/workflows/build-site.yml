@@ -4,20 +4,23 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
+
+    env:
+      BUILD_DIR: '/public'
+      DIST_DIR: '$BUILD_DIR/dist'
 
     steps:
       - name: Build tailwindcss
         run: |
-          npm exec tailwindcss -i ./src/input.css > ./dist/tailwind.css
+          npm exec tailwindcss -i ./src/input.css > $DIST_DIR/tailwind.css
 
       - name: copy public files
         run: |
-          mkdir public
-          cp -r dist public/
-          cp -r src/* public/
-          cp -r res public/
+          mkdir -p $BUILD_DIR $DIST_DIR
+          cp -r dist $BUILD_DIR
+          cp -r src/* $BUILD_DIR
+          cp -r res $BUILD_DIR
 
       - name: minify site
         run: |
@@ -29,4 +32,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: .$BUILD_DIR
