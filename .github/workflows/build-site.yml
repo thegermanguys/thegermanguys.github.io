@@ -23,7 +23,7 @@ jobs:
 
       - name: Build tailwindcss
         run: |
-          npm exec tailwindcss -i ./src/input.css > $DIST_DIR/tailwind.css
+          npx tailwindcss -i ./src/input.css -o $DIST_DIR/tailwind.css
 
       - name: minify site
         run: |
