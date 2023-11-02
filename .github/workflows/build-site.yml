@@ -1,18 +1,32 @@
-# name: Node.js CI
+name: Node.js CI
 
-# on: [push]
+on: [push]
 
-# jobs:
-#   build:
+jobs:
+  build:
 
-#     runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-#     steps:
-#       - uses: actions/checkout@v4
-#       - name: Use Node.js
-#         uses: actions/setup-node@v3
-#         with:
-#           node-version: '20.x'
-#       - run: npm ci
-#       - run: npm run build --if-present
-#       - run: npm test
+    steps:
+      - name: Build tailwindcss
+        run: |
+          npm exec tailwindcss -i ./src/input.css > ./dist/tailwind.css
+
+      - name: copy public files
+        run: |
+          mkdir public
+          cp -r dist public/
+          cp -r src/* public/
+          cp -r res public/
+
+      - name: minify site
+        run: |
+          sudo apt update
+          sudo apt install minify
+          minify -r -v ./public -o ./public
+
+      - name: deploy site
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
