@@ -1,6 +1,6 @@
 name: Node.js CI
 
-on: [push]
+on: [push, workflow_dispatch]
 
 jobs:
   build:
@@ -20,6 +20,7 @@ jobs:
         run: |
           mkdir -p $BUILD_DIR $DIST_DIR
           cp -r res src/* $BUILD_DIR
+          rm $BUILD_DIR/input.css
 
       - name: Build tailwindcss
         run: |
