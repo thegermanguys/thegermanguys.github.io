@@ -7,20 +7,18 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      BUILD_DIR: '/public'
-      DIST_DIR: '$BUILD_DIR/dist'
+      BUILD_DIR: "/public"
+      DIST_DIR: "$BUILD_DIR/dist"
 
     steps:
-      - name: Build tailwindcss
-        run: |
-          npm exec tailwindcss -i ./src/input.css > $DIST_DIR/tailwind.css
-
       - name: copy public files
         run: |
           mkdir -p $BUILD_DIR $DIST_DIR
-          cp -r dist $BUILD_DIR
-          cp -r src/* $BUILD_DIR
-          cp -r res $BUILD_DIR
+          cp -r res src/* $BUILD_DIR
+
+      - name: Build tailwindcss
+        run: |
+          npm exec tailwindcss -i ./src/input.css > $DIST_DIR/tailwind.css
 
       - name: minify site
         run: |
