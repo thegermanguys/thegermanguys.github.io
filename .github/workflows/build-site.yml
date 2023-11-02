@@ -20,7 +20,8 @@ jobs:
       - name: copy public files
         run: |
           mkdir -p $BUILD_DIR $DIST_DIR
-          cp -r res src/* $BUILD_DIR
+          cp -r ./res $BUILD_DIR
+          cp -r src/* $BUILD_DIR
           rm $BUILD_DIR/input.css
 
       - name: Build tailwindcss
@@ -31,10 +32,10 @@ jobs:
         run: |
           sudo apt update
           sudo apt install minify
-          minify -r -v ./public -o ./public
+          minify -r -v $BUILD_DIR -o $BUILD_DIR
 
       - name: deploy site
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .$BUILD_DIR
+          publish_dir: ./public
