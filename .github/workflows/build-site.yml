@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      BUILD_DIR: "/public"
+      BUILD_DIR: "public"
       DIST_DIR: "$BUILD_DIR/dist"
 
     steps:
