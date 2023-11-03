@@ -28,8 +28,8 @@ jobs:
       - name: minify site
         run: |
           sudo apt update
-          sudo apt install minify
-          minify --recursive --verbose --output ./public/ ./public/ && tree
+          sudo apt install -y minify
+          minify --recursive --verbose --output ./ ./ && tree
 
       - name: deploy site
         uses: peaceiris/actions-gh-pages@v3
