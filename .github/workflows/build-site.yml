@@ -23,6 +23,14 @@ jobs:
           sudo apt install minify
           minify -r -v ./ -o ./
 
+      - name: layout site
+        run: |
+          mkdir public
+          cp -r ./src/* public
+          cp -r ./dist/ public/dist
+          cp -r ./res public/res
+          rm ./public/input.css
+
       - name: show files
         run: tree
 
@@ -30,4 +38,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
+          publish_dir: ./public
