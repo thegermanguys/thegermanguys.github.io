@@ -19,20 +19,17 @@ jobs:
 
       - name: layout site
         run: |
-          mkdir ./public
-          cp -r ./src/* ./public
-          cp -r ./dist/ ./public/dist
-          cp -r ./res public/res
-          rm ./public/input.css
+          mkdir ./public && tree
+          cp -r ./src/* ./public/ && tree
+          cp -r ./dist/ ./public/dist && tree
+          cp -r ./res/ public/res && tree
+          rm ./public/input.css && tree
 
       - name: minify site
         run: |
           sudo apt update
           sudo apt install minify
-          minify -r -v ./public -o ./public
-
-      - name: show files
-        run: tree
+          minify -r -v ./public -o ./public && tree
 
       - name: deploy site
         uses: peaceiris/actions-gh-pages@v3
