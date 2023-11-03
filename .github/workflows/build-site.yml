@@ -17,12 +17,6 @@ jobs:
         run: |
           npx tailwindcss -i ./src/input.css -o ./dist/tailwind.css
 
-      - name: minify site
-        run: |
-          sudo apt update
-          sudo apt install minify
-          minify -r -v ./ -o ./
-
       - name: layout site
         run: |
           mkdir public
@@ -30,6 +24,12 @@ jobs:
           cp -r ./dist/ public/dist
           cp -r ./res public/res
           rm ./public/input.css
+
+      - name: minify site
+        run: |
+          sudo apt update
+          sudo apt install minify
+          minify -r -v ./public -o ./public
 
       - name: show files
         run: tree
