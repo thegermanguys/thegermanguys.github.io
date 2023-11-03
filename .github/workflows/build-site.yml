@@ -30,6 +30,9 @@ jobs:
           sudo apt install minify
           minify -r -v $BUILD_DIR -o $BUILD_DIR
 
+      - name: show files
+        run: tree
+
       - name: deploy site
         uses: peaceiris/actions-gh-pages@v3
         with:
