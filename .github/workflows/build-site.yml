@@ -19,9 +19,9 @@ jobs:
 
       - name: layout site
         run: |
-          mkdir public
-          cp -r ./src/* public
-          cp -r ./dist/ public/dist
+          mkdir ./public
+          cp -r ./src/* ./public
+          cp -r ./dist/ ./public/dist
           cp -r ./res public/res
           rm ./public/input.css
 
