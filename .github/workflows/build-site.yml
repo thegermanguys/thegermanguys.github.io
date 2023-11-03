@@ -21,7 +21,7 @@ jobs:
         run: |
           sudo apt update
           sudo apt install minify
-          minify -r -v $BUILD_DIR -o $BUILD_DIR
+          minify -r -v ./ -o ./
 
       - name: show files
         run: tree
