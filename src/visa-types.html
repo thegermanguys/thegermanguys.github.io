@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Visa Types - The German guy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/dist/tailwind.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8a53f4c189.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</head>
+
+<body class="break-words bg-primary">
+    <!-- This will contain navagination bar and a hero section -->
+    <section class="relative">
+        <!-- navigation bar -->
+        <nav id="navbar" class="container relative z-20 items-center p-6 mx-auto w-full lg:flex lg:justify-between">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a class="text-2xl font-bold text-gray-800 uppercase lg:text-3xl hover:text-gray-700" href="#">The
+                        german guy</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button type="button"
+                    class="flex text-gray-500 lg:hidden hover:text-gray-600 focus:outline-none focus:text-gray-600"
+                    aria-label="toggle menu" onclick="toggleMenu(this)">
+                    <i class="transition-transform toggle-icon fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+
+            <div
+                class="hidden flex-col mt-4 space-y-2 menu-item lg:inline-flex lg:-mx-6 lg:mt-0 lg:flex-row lg:space-y-0">
+                <div class="relative text-gray-800 lg:px-6 group">
+                    <span class="cursor-pointer select-none dropdown-nav hover:text-pink-500" tabindex="0"
+                        onclick="toggleDropdownNav(this)">Services <i class="fa-solid fa-caret-down"></i></span>
+                    <div
+                        class="inline-flex overflow-hidden absolute top-0 left-0 flex-col p-0 px-4 mt-8 w-max rounded shadow-md bg-primary">
+                        <a class="p-1 pt-3 cursor-pointer hover:text-pink-500">Consuling</a>
+                        <a class="p-1 cursor-pointer hover:text-pink-500">After-arrival setup</a>
+                    </div>
+                </div>
+                <a class="text-gray-800 lg:px-6 hover:text-pink-500" href="#service">Pricing</a>
+                <a class="text-gray-800 lg:px-6 hover:text-pink-500" href="#faq">FAQ</a>
+                <div class="relative text-gray-800 lg:px-6 group">
+                    <span class="cursor-pointer select-none dropdown-nav hover:text-pink-500" tabindex="0"
+                        onclick="toggleDropdownNav(this)">Visa Type <i class="fa-solid fa-caret-down"></i></span>
+                    <div
+                        class="inline-flex overflow-hidden absolute top-0 left-0 flex-col p-0 px-4 mt-8 w-max rounded shadow-md bg-primary">
+                        <a class="p-1 pt-3 cursor-pointer hover:text-pink-500">Bachelors Student</a>
+                        <a class="p-1 pt-3 cursor-pointer hover:text-pink-500">Masters Student</a>
+                        <a class="p-1 cursor-pointer hover:text-pink-500">Ausbildung</a>
+                        <a class="p-1 cursor-pointer hover:text-pink-500">Au-pair</a>
+                        <a class="p-1 pb-3 cursor-pointer hover:text-pink-500">High
+                            Skilled Work permit</a>
+                    </div>
+                </div>
+                <div class="relative text-gray-800 lg:px-6 group">
+                    <span class="cursor-pointer select-none dropdown-nav hover:text-pink-500" tabindex="0"
+                        onclick="toggleDropdownNav(this)">About <i class="fa-solid fa-caret-down"></i></span>
+                    <div
+                        class="inline-flex overflow-hidden absolute top-0 left-0 flex-col p-0 px-4 mt-8 w-max rounded shadow-md bg-primary">
+                        <a class="p-1 pt-3 cursor-pointer hover:text-pink-500">Impressum</a>
+                        <a class="p-1 cursor-pointer hover:text-pink-500">Team</a>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="hidden px-5 py-2 mt-4 space-x-10 h-10 text-sm text-center text-gray-800 align-top menu-item lg:inline-flex lg:mt-0 lg:w-auto">
+                <a alt="The German Guy on instagram" target="_blank" href="https://www.facebook.com/imawanish5"
+                    class="mt-1.5 text-xl fa-brands fa-facebook hover:text-blue-500 text">
+                    <span class="hidden">The
+                        german guy on facebook: facebook.com/@imawanish5</span>
+                </a>
+                <a alt="The German Guy on facebook" target="_blank" href="https://www.instagram.com/nep_thegermanguy"
+                    class="mt-1.5 text-xl fa-brands fa-instagram hover:text-pink-600"><span class="hidden">The german
+                        guy on instagram: instagram.com/@nep_thegermanguy</span></a>
+                <a href="#footer" class="px-5 text-xl text-slate-600 hover:text-blue-600">Contact us <i
+                        class="fa-solid fa-arrow-right fa-fade"></i></a>
+            </div>
+
+        </nav>
+    </section>
+
+    <!--cardboard to showcase visa type-->
+    <section class="bg-[url('/res/plane-as-bg.png')] bg-cover bg-left bg-no-repeat py-10">
+        <div class="pt-10 text-center">
+            <h1 class="text-5xl font-bold tracking-wide">Dependable and Trustworthy Visa &amp;<br><span class="text-slate-600">Immigration Guidance</span></h1>
+            <p class=""></p>
+        </div>
+
+        <div class="flex flex-row flex-wrap justify-around content-center pt-12 align-middle">
+            <div
+                class="px-12 py-10 m-5 bg-white rounded-2xl shadow-xl transition-all cursor-pointer hover:shadow-2xl">
+                <i class="block p-4 text-4xl text-white bg-pink-400 rounded-full fa-regular fa-paper-plane"></i>
+                <span class="block mt-6 text-2xl">Job seeker visa</span>
+                <p class="pt-5">Embarking on a journey of higher education in a foreign country opens doors to...</p>
+            </div>
+
+            <div
+                class="px-12 py-10 m-5 bg-white rounded-2xl shadow-xl transition-all cursor-pointer hover:shadow-2xl">
+                <i class="block p-4 text-4xl text-white bg-blue-400 rounded-full fa-solid fa-graduation-cap"></i>
+                <span class="block mt-6 text-2xl">Student Visa</span>
+                <p class="pt-5">Embarking on a journey of higher education in a foreign country opens doors to...</p>
+            </div>
+
+            <div
+                class="px-12 py-10 m-5 bg-white rounded-2xl shadow-xl transition-all cursor-pointer hover:shadow-2xl">
+                <i class="block p-4 text-4xl text-white bg-green-400 rounded-full fa-solid fa-house-chimney"></i>
+                <span class="block mt-6 text-2xl">Au-pair visa</span>
+                <p class="pt-5">Embarking on a journey of higher education in a foreign country opens doors to...</p>
+            </div>
+
+
+            <div
+                class="px-12 py-10 m-5 bg-white rounded-2xl shadow-xl transition-all cursor-pointer hover:shadow-2xl">
+                <i class="block p-4 text-4xl text-white bg-violet-400 rounded-full fa-solid fa-syringe"></i>
+                <span class="block mt-6 text-2xl">Ausbuldung Visa</span>
+                <p class="pt-5">Embarking on a journey of higher education in a foreign country opens doors to...</p>
+            </div>
+
+            <div
+                class="px-12 py-10 m-5 bg-white rounded-2xl shadow-xl transition-all cursor-pointer hover:shadow-2xl">
+                <i class="block p-4 text-4xl text-white bg-yellow-400 rounded-full fa-regular fa-paper-plane"></i>
+                <span class="block mt-6 text-2xl">Skilled professional visa</span>
+                <p class="pt-5">Embarking on a journey of higher education in a foreign country opens doors to...</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- footer -->
+    <footer id="footer" class="pb-10 bg-gray-900 lg:pt-20">
+        <!-- final call to action -->
+        <div class="py-10 mx-auto max-w-2xl text-white">
+            <div class="text-center">
+                <h3 class="mb-3 text-3xl"> Talk to us today </h3>
+                <p> You decide, we help you achieve it </p>
+                <div class="flex justify-center my-10">
+                    <a href="https://www.facebook.com/imawanish5"
+                        class="flex items-center px-4 py-2 mx-2 w-52 w-auto rounded-lg border">
+                        <img alt="meta facebook messenger icon" src="/res/messenger.png" class="w-7 md:w-8">
+                        <div class="ml-3 text-left">
+                            <p class="text-xs text-gray-200"> Contact us on </p>
+                            <p class="text-sm md:text-base"> Messenger </p>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/nep_thegermanguy"
+                        class="flex items-center px-4 py-2 mx-2 w-44 w-auto rounded-lg border">
+                        <img alt="meta instagram icon" src="/res/instagram.png" class="w-7 md:w-8">
+                        <div class="ml-3 text-left">
+                            <p class="text-xs text-gray-200"> Like us on</p>
+                            <p class="text-sm md:text-base"> Instagram </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="block ml-auto text-center text-white">
+            <details class="inline-block mb-10 text-left">
+                <summary class="text-center cursor-pointer">Impressum</summary>
+                The German Guy<br>
+                Mühlenweg 34a<br>
+                15232 Frankfurt(Oder), Germany<br>
+                Email: <a href="mailto:contact@thegermanguy.org" class="underline">contact@thegermanguy.org</a><br>
+                Name der entgegennehmenden Stelle: Stadt Frankfurt(Oder)<br>
+                VAT ID Number XXXXX<br>
+                Representative: Awanish Srivastava<br>
+            </details>
+            <p class="">Copyright &copy; 2023. All Right Reserved by TheGermanGuy &trade;</p>
+        </div>
+    </footer>
+    <!-- credit to developer -->
+    <p class="py-2 text-lg text-center text-white bg-gray-800">Gifted with <i
+            class="px-2 text-red-700 fa-solid fa-heart"></i> by <a target="_blank" href="https://me.sudipg.com.np"
+            class="underline">Sudip
+            Ghimire</a>
+    </p>
+</body>
+
+</html>
