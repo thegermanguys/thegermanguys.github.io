@@ -55,3 +55,13 @@ function toggleFaq(button) {
     answer.classList.toggle('opacity-1');
     answer.classList.toggle('opacity-0');
 }
+
+/// toggle dropdown menu
+function toggleDropdownNav(label) {
+    let roll = label.nextElementSibling;
+    roll.classList.contains('rolled-down')? roll.classList.remove('rolled-down') : roll.classList.add('rolled-down');
+
+    document.querySelectorAll('.dropdown-nav').forEach(dm => {
+        if (!dm.isSameNode(label)) dm.nextElementSibling.classList.remove('rolled-down');
+    });
+}

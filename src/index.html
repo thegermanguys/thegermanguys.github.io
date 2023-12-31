@@ -14,7 +14,7 @@
     <!-- This will contain navagination bar and a hero section -->
     <section class="relative lg:-mb-24">
         <!-- navigation bar -->
-        <nav id="navbar" class="container relative z-20 p-6 mx-auto w-full lg:flex lg:justify-between lg:items-center">
+        <nav id="navbar" class="container relative z-20 items-start p-6 mx-auto w-full lg:flex lg:justify-between">
             <div class="flex justify-between items-center">
                 <div>
                     <a class="text-2xl font-bold text-gray-800 uppercase lg:text-3xl hover:text-gray-700" href="#">The
@@ -30,15 +30,45 @@
             </div>
 
             <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+
             <div
                 class="hidden flex-col mt-4 space-y-2 menu-item lg:inline-flex lg:-mx-6 lg:mt-0 lg:flex-row lg:space-y-0">
-                <a class="text-gray-800 lg:px-6 hover:text-pink-500" href="#service">Services</a>
+                <div class="relative text-gray-800 lg:px-6 group">
+                    <span class="cursor-pointer select-none dropdown-nav hover:text-pink-500" tabindex="0"
+                        onclick="toggleDropdownNav(this)">Services <i class="fa-solid fa-caret-down"></i></span>
+                    <div
+                        class="inline-flex overflow-hidden absolute top-0 left-0 flex-col p-0 px-4 mt-8 w-max rounded shadow-md bg-primary">
+                        <a class="p-1 pt-3 cursor-pointer hover:text-pink-500">Consuling</a>
+                        <a class="p-1 cursor-pointer hover:text-pink-500">After-arrival setup</a>
+                    </div>
+                </div>
                 <a class="text-gray-800 lg:px-6 hover:text-pink-500" href="#service">Pricing</a>
                 <a class="text-gray-800 lg:px-6 hover:text-pink-500" href="#faq">FAQ</a>
+                <div class="relative text-gray-800 lg:px-6 group">
+                    <span class="cursor-pointer select-none dropdown-nav hover:text-pink-500" tabindex="0"
+                        onclick="toggleDropdownNav(this)">Visa Type <i class="fa-solid fa-caret-down"></i></span>
+                    <div
+                        class="inline-flex overflow-hidden absolute top-0 left-0 flex-col p-0 px-4 mt-8 w-max rounded shadow-md bg-primary">
+                        <a class="p-1 pt-3 cursor-pointer hover:text-pink-500">Student
+                            Visa</a>
+                        <a class="p-1 cursor-pointer hover:text-pink-500">Ausbildung</a>
+                        <a class="p-1 pb-3 cursor-pointer hover:text-pink-500">High
+                            Skilled Work permit</a>
+                    </div>
+                </div>
+                <div class="relative text-gray-800 lg:px-6 group">
+                    <span class="cursor-pointer select-none dropdown-nav hover:text-pink-500" tabindex="0"
+                        onclick="toggleDropdownNav(this)">About <i class="fa-solid fa-caret-down"></i></span>
+                    <div
+                        class="inline-flex overflow-hidden absolute top-0 left-0 flex-col p-0 px-4 mt-8 w-max rounded shadow-md bg-primary">
+                        <a class="p-1 pt-3 cursor-pointer hover:text-pink-500">Impressum</a>
+                        <a class="p-1 cursor-pointer hover:text-pink-500">Team</a>
+                    </div>
+                </div>
             </div>
 
             <div
-                class="hidden px-5 py-2 mt-4 space-x-10 h-10 text-sm text-center text-gray-800 menu-item lg:inline-flex lg:mt-0 lg:w-auto">
+                class="hidden px-5 py-2 mt-4 space-x-10 h-10 text-sm text-center text-gray-800 align-top menu-item lg:inline-flex lg:mt-0 lg:w-auto">
                 <a alt="The German Guy on instagram" target="_blank" href="https://www.facebook.com/imawanish5"
                     class="mt-1.5 text-xl fa-brands fa-facebook hover:text-blue-500 text">
                     <span class="hidden">The
@@ -78,13 +108,13 @@
                 </div>
             </div>
             <div
-                class="lg:flex hidden absolute top-0 right-0 bg-cover rounded-tl-[27%] flex-col w-1/2 h-full bg-right-top bg-no-repeat bg-[url('/res/image-background.jpg')]">
+                class="lg:flex hidden absolute top-0 right-0 bg-cover rounded-tl-[10rem] flex-col w-1/2 h-full bg-right-top bg-no-repeat bg-[url('/res/image-background.jpg')]">
             </div>
         </div>
     </section>
 
     <!-- This section will contain the FAQ's -->
-    <section class="relative z-10 py-10 bg-gray-50 rounded-3xl lg:py-20 lg:-mb-24 lg:px-20 lg:mx-64">
+    <section class="relative z-10 py-10 bg-gray-50 rounded-3xl lg:py-20 lg:-mb-24 lg:px-10 xl:px-20 lg:mx-64">
         <div id="faq" class="container px-6 mx-auto">
             <p class="text-xl font-bold text-center text-gray-500">Services Overview</p>
             <h1 class="pt-4 text-3xl font-semibold text-center text-gray-800 lg:text-5xl">Why should I go to germany?
@@ -381,8 +411,9 @@
         </div>
     </footer>
     <!-- credit to developer -->
-    <p class="py-2 text-lg text-center text-white bg-gray-800">Gifted with <i class="px-2 text-red-700 fa-solid fa-heart"></i> by <a target="_blank"
-            href="https://me.sudipg.com.np" class="underline">Sudip
+    <p class="py-2 text-lg text-center text-white bg-gray-800">Gifted with <i
+            class="px-2 text-red-700 fa-solid fa-heart"></i> by <a target="_blank" href="https://me.sudipg.com.np"
+            class="underline">Sudip
             Ghimire</a>
     </p>
 </body>
