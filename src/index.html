@@ -17,7 +17,7 @@
         <nav id="navbar" class="container relative z-20 items-start p-6 mx-auto w-full lg:flex lg:justify-between">
             <div class="flex justify-between items-center">
                 <div>
-                    <a class="text-2xl font-bold text-gray-800 uppercase lg:text-3xl hover:text-gray-700" href="#">The
+                    <a class="text-2xl font-bold text-gray-800 uppercase lg:text-3xl hover:text-gray-700" href="/">The
                         german guy</a>
                 </div>
 
@@ -34,27 +34,31 @@
             <div
                 class="hidden flex-col mt-4 space-y-2 menu-item lg:inline-flex lg:-mx-6 lg:mt-0 lg:flex-row lg:space-y-0">
                 <div class="relative text-gray-800 lg:px-6 group">
-                    <span class="cursor-pointer select-none dropdown-nav hover:text-pink-500" tabindex="0"
+                    <span class="cursor-pointer select-none hover:text-pink-500 dropdown-nav" tabindex="0"
                         onclick="toggleDropdownNav(this)">Services <i class="fa-solid fa-caret-down"></i></span>
                     <div
                         class="inline-flex overflow-hidden absolute top-0 left-0 flex-col p-0 px-4 mt-8 w-max rounded shadow-md bg-primary">
-                        <a class="p-1 pt-3 cursor-pointer hover:text-pink-500" href="/index.html">Consuling</a>
-                        <a class="p-1 cursor-pointer hover:text-pink-500">Language Classes</a>
-                        <a class="p-1 cursor-pointer hover:text-pink-500">After-arrival setup</a>
+                        <a class="p-1 pt-3 cursor-pointer hover:text-pink-500" href="/services.html#consuling">Consuling</a>
+                        <a class="p-1 cursor-pointer hover:text-pink-500" href="/services.html#language">Language Classes</a>
+                        <a class="p-1 cursor-pointer hover:text-pink-500" href="/services.html/#after-arrival">After-arrival setup</a>
                     </div>
                 </div>
                 <a class="text-gray-800 lg:px-6 hover:text-pink-500" href="#service">Pricing</a>
                 <a class="text-gray-800 lg:px-6 hover:text-pink-500" href="#faq">FAQ</a>
                 <div class="relative text-gray-800 lg:px-6 group">
-                    <span class="cursor-pointer select-none dropdown-nav hover:text-pink-500" tabindex="0"
+                    <span class="cursor-pointer select-none hover:text-pink-500 dropdown-nav" tabindex="0"
                         onclick="toggleDropdownNav(this)">Visa Type <i class="fa-solid fa-caret-down"></i></span>
                     <div
                         class="inline-flex overflow-hidden absolute top-0 left-0 flex-col p-0 px-4 mt-8 w-max rounded shadow-md bg-primary">
-                        <a href="visa-types.html#bachelors" class="p-1 pt-3 cursor-pointer hover:text-pink-500">Bachelors Student</a>
-                        <a href="visa-types.html#masters" class="p-1 pt-3 cursor-pointer hover:text-pink-500">Masters Student</a>
-                        <a href="visa-types.html#ausbildung" class="p-1 cursor-pointer hover:text-pink-500">Ausbildung</a>
+                        <a href="visa-types.html#student"
+                            class="p-1 pt-3 cursor-pointer hover:text-pink-500">Bachelors Student</a>
+                        <a href="visa-types.html#student" class="p-1 pt-3 cursor-pointer hover:text-pink-500">Masters
+                            Student</a>
+                        <a href="visa-types.html#ausbildung"
+                            class="p-1 cursor-pointer hover:text-pink-500">Ausbildung</a>
                         <a href="visa-types.html#au-pair" class="p-1 cursor-pointer hover:text-pink-500">Au-pair</a>
-                        <a href="visa-types.html#skilled-worker" class="p-1 pb-3 cursor-pointer hover:text-pink-500">High
+                        <a href="visa-types.html#skilled-worker"
+                            class="p-1 pb-3 cursor-pointer hover:text-pink-500">High
                             Skilled Work permit</a>
                     </div>
                 </div>
@@ -63,8 +67,8 @@
                         onclick="toggleDropdownNav(this)">About <i class="fa-solid fa-caret-down"></i></span>
                     <div
                         class="inline-flex overflow-hidden absolute top-0 left-0 flex-col p-0 px-4 mt-8 w-max rounded shadow-md bg-primary">
-                        <a class="p-1 pt-3 cursor-pointer hover:text-pink-500">Impressum</a>
-                        <a class="p-1 cursor-pointer hover:text-pink-500">Team &amp; Testimonials</a>
+                        <a class="p-1 pt-3 cursor-pointer hover:text-pink-500" href="/impressum.html">Impressum</a>
+                        <a class="p-1 cursor-pointer hover:text-pink-500" href="/teams.html">Teams &amp; Testimonials</a>
                     </div>
                 </div>
             </div>
@@ -328,49 +332,6 @@
         </div>
     </section>
 
-    <!-- This section will contain contact method -->
-    <!--section
-        class="flex justify-center flex-col xl:flex-row lg:-mb-20 bg-white bg-opacity-60 lg:mx-20 rounded-xl lg:-mt-32 backdrop-blur-[30px]">
-        <div class="container block flex-grow px-12 py-12 w-auto rounded-lg md:py-16 md:px-18">
-            <div class="grid gap-x-6 mb-12 md:grid-cols-2 lg:grid-cols-4">
-                <div class="mx-auto mb-12 text-center lg:mb-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                        stroke="currentColor" class="mx-auto mb-6 w-8 h-8 text-primarydark">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 00-8.862 12.872M12.75 3.031a9 9 0 016.69 14.036m0 0l-.177-.529A2.25 2.25 0 0017.128 15H16.5l-.324-.324a1.453 1.453 0 00-2.328.377l-.036.073a1.586 1.586 0 01-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 01-5.276 3.67m0 0a9 9 0 01-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25" />
-                    </svg>
-                    <h6 class="font-medium text-gray-800">Germany &amp; Nepal</h6>
-                </div>
-                <div class="mx-auto mb-12 text-center lg:mb-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                        stroke="currentColor" class="mx-auto mb-6 w-8 h-8 text-primarydark">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-                    </svg>
-                    <h6 class="font-medium text-gray-800">Berlin, 12051</h6>
-                </div>
-                <div class="mx-auto mb-6 text-center md:mb-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                        stroke="currentColor" class="mx-auto mb-6 w-8 h-8 text-primarydark">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
-                    </svg>
-                    <h6 class="flex flex-wrap justify-center font-medium text-gray-800"><span>+ 49 176 61517559</span>,<span>+49 163 7803820</span><span>+49 179 2076473</span></h6>
-                </div>
-                <div class="mx-auto text-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                        stroke="currentColor" class="mx-auto mb-6 w-8 h-8 text-primarydark">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
-                    </svg>
-                    <h6 class="font-medium text-gray-800">Tax ID: 273 384</h6>
-                </div>
-            </div>
-        </div>
-    </section-->
-
-
     <!-- footer -->
     <footer id="footer" class="pb-10 bg-gray-900 lg:pt-20">
         <!-- final call to action -->
@@ -380,7 +341,7 @@
                 <p> You decide, we help you achieve it </p>
                 <div class="flex justify-center my-10">
                     <a href="https://www.facebook.com/imawanish5"
-                        class="flex items-center px-4 py-2 mx-2 w-52 w-auto rounded-lg border">
+                        class="flex items-center px-4 py-2 mx-2 w-auto rounded-lg border">
                         <img alt="meta facebook messenger icon" src="/res/messenger.png" class="w-7 md:w-8">
                         <div class="ml-3 text-left">
                             <p class="text-xs text-gray-200"> Contact us on </p>
@@ -388,7 +349,7 @@
                         </div>
                     </a>
                     <a href="https://www.instagram.com/nep_thegermanguy"
-                        class="flex items-center px-4 py-2 mx-2 w-44 w-auto rounded-lg border">
+                        class="flex items-center px-4 py-2 mx-2 w-auto rounded-lg border">
                         <img alt="meta instagram icon" src="/res/instagram.png" class="w-7 md:w-8">
                         <div class="ml-3 text-left">
                             <p class="text-xs text-gray-200"> Like us on</p>
@@ -397,19 +358,8 @@
                     </a>
                 </div>
             </div>
-        </div>
-        <div class="block ml-auto text-center text-white">
-            <details class="inline-block mb-10 text-left">
-                <summary class="text-center cursor-pointer">Impressum</summary>
-                The German Guy<br>
-                Mühlenweg 34a<br>
-                15232 Frankfurt(Oder), Germany<br>
-                Email: <a href="mailto:contact@thegermanguy.org" class="underline">contact@thegermanguy.org</a><br>
-                Name der entgegennehmenden Stelle: Stadt Frankfurt(Oder)<br>
-                VAT ID Number XXXXX<br>
-                Representative: Awanish Srivastava<br>
-            </details>
-            <p class="">Copyright &copy; 2023. All Right Reserved by TheGermanGuy &trade;</p>
+
+            <p class="text-center">Copyright &copy; 2024. All rights reserved to The German Guy</p>
         </div>
     </footer>
     <!-- credit to developer -->
