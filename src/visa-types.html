@@ -13,8 +13,8 @@
 <body class="break-words bg-primary">
     <!-- This will contain navagination bar and a hero section -->
     <section class="relative">
-        <!-- navigation bar -->
-        <nav id="navbar" class="container relative z-20 items-center p-6 mx-auto w-full lg:flex lg:justify-between">
+        <!---- navigation bar -->
+        <nav id="navbar" class="container relative z-20 items-start p-6 mx-auto w-full lg:flex lg:justify-between">
             <div class="flex justify-between items-center">
                 <div>
                     <a class="text-2xl font-bold text-gray-800 uppercase lg:text-3xl hover:text-gray-700" href="#">The
@@ -45,15 +45,15 @@
                 <a class="text-gray-800 lg:px-6 hover:text-pink-500" href="#service">Pricing</a>
                 <a class="text-gray-800 lg:px-6 hover:text-pink-500" href="#faq">FAQ</a>
                 <div class="relative text-gray-800 lg:px-6 group">
-                    <span class="cursor-pointer select-none dropdown-nav hover:text-pink-500" tabindex="0"
+                    <span class="text-pink-500 cursor-pointer select-none dropdown-nav" tabindex="0"
                         onclick="toggleDropdownNav(this)">Visa Type <i class="fa-solid fa-caret-down"></i></span>
                     <div
                         class="inline-flex overflow-hidden absolute top-0 left-0 flex-col p-0 px-4 mt-8 w-max rounded shadow-md bg-primary">
-                        <a class="p-1 pt-3 cursor-pointer hover:text-pink-500">Bachelors Student</a>
-                        <a class="p-1 pt-3 cursor-pointer hover:text-pink-500">Masters Student</a>
-                        <a class="p-1 cursor-pointer hover:text-pink-500">Ausbildung</a>
-                        <a class="p-1 cursor-pointer hover:text-pink-500">Au-pair</a>
-                        <a class="p-1 pb-3 cursor-pointer hover:text-pink-500">High
+                        <a href="visa-types.html#bachelors" class="p-1 pt-3 cursor-pointer hover:text-pink-500">Bachelors Student</a>
+                        <a href="visa-types.html#masters" class="p-1 pt-3 cursor-pointer hover:text-pink-500">Masters Student</a>
+                        <a href="visa-types.html#ausbildung" class="p-1 cursor-pointer hover:text-pink-500">Ausbildung</a>
+                        <a href="visa-types.html#au-pair" class="p-1 cursor-pointer hover:text-pink-500">Au-pair</a>
+                        <a href="visa-types.html#skilled-worker" class="p-1 pb-3 cursor-pointer hover:text-pink-500">High
                             Skilled Work permit</a>
                     </div>
                 </div>
@@ -83,47 +83,45 @@
             </div>
 
         </nav>
+
+        </nav>
     </section>
 
     <!--cardboard to showcase visa type-->
-    <section class="bg-[url('/res/plane-as-bg.png')] bg-cover bg-left bg-no-repeat py-10">
+    <section class="bg-[url('/res/plane-as-bg.png')] bg-cover bg-center bg-no-repeat py-10">
         <div class="pt-10 text-center">
-            <h1 class="text-5xl font-bold tracking-wide">Dependable and Trustworthy Visa &amp;<br><span class="text-slate-600">Immigration Guidance</span></h1>
+            <h1 class="text-5xl font-bold tracking-wide">Dependable and Trustworthy Visa &amp;<br><span
+                    class="text-slate-600">Immigration Guidance</span></h1>
             <p class=""></p>
         </div>
 
         <div class="flex flex-row flex-wrap justify-around content-center pt-12 align-middle">
-            <div
-                class="px-12 py-10 m-5 bg-white rounded-2xl shadow-xl transition-all cursor-pointer hover:shadow-2xl">
+            <div class="px-12 py-10 m-5 bg-white rounded-2xl shadow-xl transition-all cursor-pointer hover:shadow-2xl">
                 <i class="block p-4 text-4xl text-white bg-pink-400 rounded-full fa-regular fa-paper-plane"></i>
                 <span class="block mt-6 text-2xl">Job seeker visa</span>
                 <p class="pt-5">Embarking on a journey of higher education in a foreign country opens doors to...</p>
             </div>
 
-            <div
-                class="px-12 py-10 m-5 bg-white rounded-2xl shadow-xl transition-all cursor-pointer hover:shadow-2xl">
+            <div class="px-12 py-10 m-5 bg-white rounded-2xl shadow-xl transition-all cursor-pointer hover:shadow-2xl">
                 <i class="block p-4 text-4xl text-white bg-blue-400 rounded-full fa-solid fa-graduation-cap"></i>
                 <span class="block mt-6 text-2xl">Student Visa</span>
                 <p class="pt-5">Embarking on a journey of higher education in a foreign country opens doors to...</p>
             </div>
 
-            <div
-                class="px-12 py-10 m-5 bg-white rounded-2xl shadow-xl transition-all cursor-pointer hover:shadow-2xl">
+            <div class="px-12 py-10 m-5 bg-white rounded-2xl shadow-xl transition-all cursor-pointer hover:shadow-2xl">
                 <i class="block p-4 text-4xl text-white bg-green-400 rounded-full fa-solid fa-house-chimney"></i>
                 <span class="block mt-6 text-2xl">Au-pair visa</span>
                 <p class="pt-5">Embarking on a journey of higher education in a foreign country opens doors to...</p>
             </div>
 
 
-            <div
-                class="px-12 py-10 m-5 bg-white rounded-2xl shadow-xl transition-all cursor-pointer hover:shadow-2xl">
+            <div class="px-12 py-10 m-5 bg-white rounded-2xl shadow-xl transition-all cursor-pointer hover:shadow-2xl">
                 <i class="block p-4 text-4xl text-white bg-violet-400 rounded-full fa-solid fa-syringe"></i>
                 <span class="block mt-6 text-2xl">Ausbuldung Visa</span>
                 <p class="pt-5">Embarking on a journey of higher education in a foreign country opens doors to...</p>
             </div>
 
-            <div
-                class="px-12 py-10 m-5 bg-white rounded-2xl shadow-xl transition-all cursor-pointer hover:shadow-2xl">
+            <div class="px-12 py-10 m-5 bg-white rounded-2xl shadow-xl transition-all cursor-pointer hover:shadow-2xl">
                 <i class="block p-4 text-4xl text-white bg-yellow-400 rounded-full fa-regular fa-paper-plane"></i>
                 <span class="block mt-6 text-2xl">Skilled professional visa</span>
                 <p class="pt-5">Embarking on a journey of higher education in a foreign country opens doors to...</p>
