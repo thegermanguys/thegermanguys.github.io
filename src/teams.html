@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Services - The German guy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/dist/tailwind.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8a53f4c189.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</head>
+
+<body class="break-words bg-primary">
+    <!-- This will contain navagination bar and a hero section -->
+    <section class="relative">
+        <!---- navigation bar -->
+        <nav id="navbar" class="container relative z-20 items-start p-6 mx-auto w-full lg:flex lg:justify-between">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a class="text-2xl font-bold text-gray-800 uppercase lg:text-3xl hover:text-gray-700" href="#">The
+                        german guy</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button type="button"
+                    class="flex text-gray-500 lg:hidden hover:text-gray-600 focus:outline-none focus:text-gray-600"
+                    aria-label="toggle menu" onclick="toggleMenu(this)">
+                    <i class="transition-transform toggle-icon fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+
+            <div
+                class="hidden flex-col mt-4 space-y-2 menu-item lg:inline-flex lg:-mx-6 lg:mt-0 lg:flex-row lg:space-y-0">
+                <div class="relative text-gray-800 lg:px-6 group">
+                    <span class="text-pink-500 cursor-pointer select-none dropdown-nav" tabindex="0"
+                        onclick="toggleDropdownNav(this)">Services <i class="fa-solid fa-caret-down"></i></span>
+                    <div
+                        class="inline-flex overflow-hidden absolute top-0 left-0 flex-col p-0 px-4 mt-8 w-max rounded shadow-md bg-primary">
+                        <a class="p-1 pt-3 cursor-pointer hover:text-pink-500">Consuling</a>
+                        <a class="p-1 cursor-pointer hover:text-pink-500">Language Classes</a>
+                        <a class="p-1 cursor-pointer hover:text-pink-500">After-arrival setup</a>
+                    </div>
+                </div>
+                <a class="text-gray-800 lg:px-6 hover:text-pink-500" href="#service">Pricing</a>
+                <a class="text-gray-800 lg:px-6 hover:text-pink-500" href="#faq">FAQ</a>
+                <div class="relative text-gray-800 lg:px-6 group">
+                    <span class="cursor-pointer select-none hover:text-pink-500 dropdown-nav" tabindex="0"
+                        onclick="toggleDropdownNav(this)">Visa Type <i class="fa-solid fa-caret-down"></i></span>
+                    <div
+                        class="inline-flex overflow-hidden absolute top-0 left-0 flex-col p-0 px-4 mt-8 w-max rounded shadow-md bg-primary">
+                        <a href="visa-types.html#bachelors"
+                            class="p-1 pt-3 cursor-pointer hover:text-pink-500">Bachelors Student</a>
+                        <a href="visa-types.html#masters" class="p-1 pt-3 cursor-pointer hover:text-pink-500">Masters
+                            Student</a>
+                        <a href="visa-types.html#ausbildung"
+                            class="p-1 cursor-pointer hover:text-pink-500">Ausbildung</a>
+                        <a href="visa-types.html#au-pair" class="p-1 cursor-pointer hover:text-pink-500">Au-pair</a>
+                        <a href="visa-types.html#skilled-worker"
+                            class="p-1 pb-3 cursor-pointer hover:text-pink-500">High
+                            Skilled Work permit</a>
+                    </div>
+                </div>
+                <div class="relative text-gray-800 lg:px-6 group">
+                    <span class="cursor-pointer select-none dropdown-nav hover:text-pink-500" tabindex="0"
+                        onclick="toggleDropdownNav(this)">About <i class="fa-solid fa-caret-down"></i></span>
+                    <div
+                        class="inline-flex overflow-hidden absolute top-0 left-0 flex-col p-0 px-4 mt-8 w-max rounded shadow-md bg-primary">
+                        <a class="p-1 pt-3 cursor-pointer hover:text-pink-500">Impressum</a>
+                        <a class="p-1 text-pink-500 cursor-pointer">Team &amp; Testimonials</a>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="hidden px-5 py-2 mt-4 space-x-10 h-10 text-sm text-center text-gray-800 align-top menu-item lg:inline-flex lg:mt-0 lg:w-auto">
+                <a alt="The German Guy on instagram" target="_blank" href="https://www.facebook.com/imawanish5"
+                    class="mt-1.5 text-xl fa-brands fa-facebook hover:text-blue-500 text">
+                    <span class="hidden">The
+                        german guy on facebook: facebook.com/@imawanish5</span>
+                </a>
+                <a alt="The German Guy on facebook" target="_blank" href="https://www.instagram.com/nep_thegermanguy"
+                    class="mt-1.5 text-xl fa-brands fa-instagram hover:text-pink-600"><span class="hidden">The german
+                        guy on instagram: instagram.com/@nep_thegermanguy</span></a>
+                <a href="#footer" class="px-5 text-xl text-slate-600 hover:text-blue-600">Contact us <i
+                        class="fa-solid fa-arrow-right fa-fade"></i></a>
+            </div>
+
+        </nav>
+    </section>
+
+    <!-- Teams -->
+    <section class="md:px-10">
+        <div
+            class="overflow-hidden relative flex-row mt-8 cursor-pointer md:rounded-xl md:mt-12 md:flex md:bg-transparent bg-primarydark">
+            <img src="https://me.sudipg.com.np/images/about.jpg" alt="Sudip Ghimire" width="520" height="auto"
+                loading="lazy" class="duration-300 max-w-fulltransition-all">
+            <div class="relative flex-grow p-2 w-full max-w-screen-lg rounded-lg md:m-4 md:rouned-none">
+                <h1 class="py-2 text-3xl font-bold text-white md:text-primarydark">Sudip Ghimire</h1>
+                <p class="px-4 py-6 text-gray-800 bg-white rounded md:-ml-32">Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Blanditiis possimus vero iusto recusandae quas nulla illum, molestias
+                    veritatis nihil rerum necessitatibus delectus repudiandae omnis deserunt maxime laborum cum fugit.
+                    Saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis at velit voluptates
+                    porro eveniet cum qui reiciendis nihil cupiditate. Non voluptate animi cupiditate in dolores,
+                    aliquam voluptatibus dolorem temporibus facilis. Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit. Iure earum asperiores laboriosam dicta! Nobis molestiae libero nostrum aliquid, obcaecati ex
+                    rerum architecto maxime cupiditate ipsa deserunt voluptate autem doloremque expedita?</p>
+            </div>
+        </div>
+        <div
+            class="overflow-hidden relative flex-row-reverse mt-8 cursor-pointer md:rounded-xl md:mt-12 md:flex md:bg-transparent bg-primarydark">
+            <img src="https://me.sudipg.com.np/images/about.jpg" alt="Sudip Ghimire" width="520" height="auto"
+                loading="lazy" class="duration-300 max-w-fulltransition-all">
+            <div class="relative flex-grow p-2 w-full max-w-screen-lg rounded-lg md:m-4 md:rouned-none">
+                <h1 class="py-2 text-3xl font-bold text-white md:text-primarydark">Sudip Ghimire</h1>
+                <p class="px-4 py-6 text-gray-800 bg-white rounded md:-mr-32">Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Blanditiis possimus vero iusto recusandae quas nulla illum, molestias
+                    veritatis nihil rerum necessitatibus delectus repudiandae omnis deserunt maxime laborum cum fugit.
+                    Saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis at velit voluptates
+                    porro eveniet cum qui reiciendis nihil cupiditate. Non voluptate animi cupiditate in dolores,
+                    aliquam voluptatibus dolorem temporibus facilis. Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit. Iure earum asperiores laboriosam dicta! Nobis molestiae libero nostrum aliquid, obcaecati ex
+                    rerum architecto maxime cupiditate ipsa deserunt voluptate autem doloremque expedita?</p>
+            </div>
+        </div>
+        <div
+            class="overflow-hidden relative flex-row mt-8 cursor-pointer md:rounded-xl md:mt-12 md:flex md:bg-transparent bg-primarydark">
+            <img src="https://me.sudipg.com.np/images/about.jpg" alt="Sudip Ghimire" width="520" height="auto"
+                loading="lazy" class="duration-300 max-w-fulltransition-all">
+                <div class="relative flex-grow p-2 w-full max-w-screen-lg rounded-lg md:m-4 md:rouned-none">
+                    <h1 class="py-2 text-3xl font-bold text-white md:text-primarydark">Sudip Ghimire</h1>
+                    <p class="px-4 py-6 text-gray-800 bg-white rounded md:-ml-32">Lorem ipsum, dolor sit amet
+                        consectetur adipisicing elit. Blanditiis possimus vero iusto recusandae quas nulla illum, molestias
+                        veritatis nihil rerum necessitatibus delectus repudiandae omnis deserunt maxime laborum cum fugit.
+                        Saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis at velit voluptates
+                        porro eveniet cum qui reiciendis nihil cupiditate. Non voluptate animi cupiditate in dolores,
+                        aliquam voluptatibus dolorem temporibus facilis. Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Iure earum asperiores laboriosam dicta! Nobis molestiae libero nostrum aliquid, obcaecati ex
+                        rerum architecto maxime cupiditate ipsa deserunt voluptate autem doloremque expedita?</p>
+                </div>
+        </div>
+        <div
+            class="overflow-hidden relative flex-row-reverse mt-8 cursor-pointer md:rounded-xl md:mt-12 md:flex md:bg-transparent bg-primarydark">
+            <img src="https://me.sudipg.com.np/images/about.jpg" alt="Sudip Ghimire" width="520" height="auto"
+                loading="lazy" class="duration-300 max-w-fulltransition-all">
+                <div class="relative flex-grow p-2 w-full max-w-screen-lg rounded-lg md:m-4 md:rouned-none">
+                    <h1 class="py-2 text-3xl font-bold text-white md:text-primarydark">Sudip Ghimire</h1>
+                    <p class="px-4 py-6 text-gray-800 bg-white rounded md:-mr-32">Lorem ipsum, dolor sit amet
+                        consectetur adipisicing elit. Blanditiis possimus vero iusto recusandae quas nulla illum, molestias
+                        veritatis nihil rerum necessitatibus delectus repudiandae omnis deserunt maxime laborum cum fugit.
+                        Saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis at velit voluptates
+                        porro eveniet cum qui reiciendis nihil cupiditate. Non voluptate animi cupiditate in dolores,
+                        aliquam voluptatibus dolorem temporibus facilis. Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Iure earum asperiores laboriosam dicta! Nobis molestiae libero nostrum aliquid, obcaecati ex
+                        rerum architecto maxime cupiditate ipsa deserunt voluptate autem doloremque expedita?</p>
+                </div>
+        </div>
+    </section>
+
+    <!-- Testimonolies -->
+    <section id="testimonies" class="py-20 bg-primarydark">
+        <div class="mx-8 max-w-6xl md:mx-10 lg:mx-20 xl:mx-auto">
+
+
+            <div
+                class="opacity-100 transition duration-500 ease-in-out transform scale-100 translate-x-0 translate-y-0">
+                <div class="mb-12 space-y-5 md:mb-16 md:text-center">
+                    <div
+                        class="inline-block px-3 py-1 text-sm font-semibold text-indigo-100 rounded-lg md:text-center text-cn bg-[#202c47] bg-opacity-60 hover:cursor-pointer hover:bg-opacity-40">
+                        Words from Others
+                    </div>
+                    <h1 class="mb-5 text-3xl font-semibold text-white md:text-center md:text-5xl">
+                        It's not just us.
+                    </h1>
+                    <p class="text-xl text-gray-100 md:text-center md:text-2xl">
+                        Here's what others have to say about us.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+                <ul class="space-y-8">
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <a href="https://twitter.com/kanyewest" class="cursor-pointer">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg ring-1 bg-slate-800 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img
+                                            src="https://pbs.twimg.com/profile_images/1276461929934942210/cqNhNk6v_400x400.jpg"
+                                            class="w-12 h-12 bg-center bg-cover rounded-full border" alt="Kanye West">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Kanye West</h3>
+                                            <p class="text-gray-500 text-md">Rapper &amp; Entrepreneur</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Find God.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg ring-1 bg-slate-800 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img
+                                            src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg"
+                                            class="w-12 h-12 bg-center bg-cover rounded-full border" alt="Tim Cook">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Tim Cook</h3>
+                                            <p class="text-gray-500 text-md">CEO of Apple</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Diam quis enim lobortis scelerisque
+                                        fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis
+                                        aliquam malesuada bibendum.</p>
+                                </div>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg ring-1 bg-slate-800 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img
+                                            src="https://pbs.twimg.com/profile_images/1276461929934942210/cqNhNk6v_400x400.jpg"
+                                            class="w-12 h-12 bg-center bg-cover rounded-full border" alt="Kanye West">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Kanye West</h3>
+                                            <p class="text-gray-500 text-md">Rapper &amp; Entrepreneur</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Find God.</p>
+                                </div>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg ring-1 bg-slate-800 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img
+                                            src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg"
+                                            class="w-12 h-12 bg-center bg-cover rounded-full border" alt="Tim Cook">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Tim Cook</h3>
+                                            <p class="text-gray-500 text-md">CEO of Apple</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Diam quis enim lobortis scelerisque
+                                        fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis
+                                        aliquam malesuada bibendum.</p>
+                                </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+                <ul class="hidden space-y-8 sm:block">
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg ring-1 bg-slate-800 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img
+                                            src="https://pbs.twimg.com/profile_images/1375285353146327052/y6jeByyD_400x400.jpg"
+                                            class="w-12 h-12 bg-center bg-cover rounded-full border"
+                                            alt="Parag Agrawal">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Parag Agrawal</h3>
+                                            <p class="text-gray-500 text-md">CEO of Twitter</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Enim neque volutpat ac tincidunt
+                                        vitae
+                                        semper. Mattis aliquam faucibus purus in massa tempor. Neque vitae tempus quam
+                                        pellentesque nec. Turpis cursus in hac habitasse platea dictumst.</p>
+                                </div>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg ring-1 bg-slate-800 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img
+                                            src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg"
+                                            class="w-12 h-12 bg-center bg-cover rounded-full border" alt="Tim Cook">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Tim Cook</h3>
+                                            <p class="text-gray-500 text-md">CEO of Apple</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Diam quis enim lobortis scelerisque
+                                        fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis
+                                        aliquam malesuada bibendum.</p>
+                                </div>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div
+                                class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg opacity-25 blur transition duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/paraga" class="cursor-pointer">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg ring-1 bg-slate-800 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img
+                                            src="https://pbs.twimg.com/profile_images/1375285353146327052/y6jeByyD_400x400.jpg"
+                                            class="w-12 h-12 bg-center bg-cover rounded-full border"
+                                            alt="Parag Agrawal">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Parag Agrawal</h3>
+                                            <p class="text-gray-500 text-md">CEO of Twitter</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Enim neque volutpat ac tincidunt
+                                        vitae
+                                        semper. Mattis aliquam faucibus purus in massa tempor. Neque vitae tempus quam
+                                        pellentesque nec. Turpis cursus in hac habitasse platea dictumst.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg ring-1 bg-slate-800 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img
+                                            src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg"
+                                            class="w-12 h-12 bg-center bg-cover rounded-full border" alt="Tim Cook">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Tim Cook</h3>
+                                            <p class="text-gray-500 text-md">CEO of Apple</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Diam quis enim lobortis scelerisque
+                                        fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis
+                                        aliquam malesuada bibendum.</p>
+                                </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+                <ul class="hidden space-y-8 lg:block">
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg ring-1 bg-slate-800 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img
+                                            src="https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_400x400.jpg"
+                                            class="w-12 h-12 bg-center bg-cover rounded-full border"
+                                            alt="Satya Nadella">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Satya Nadella</h3>
+                                            <p class="text-gray-500 text-md">CEO of Microsoft</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Tortor dignissim convallis aenean et
+                                        tortor at. At ultrices mi tempus imperdiet nulla malesuada. Id cursus metus
+                                        aliquam
+                                        eleifend mi. Quis ipsum suspendisse ultrices gravida dictum fusce ut.</p>
+                                </div>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div
+                                class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg opacity-25 blur transition duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/dan_schulman" class="cursor-pointer">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg ring-1 bg-slate-800 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img
+                                            src="https://pbs.twimg.com/profile_images/516916920482672641/3jCeLgFb_400x400.jpeg"
+                                            class="w-12 h-12 bg-center bg-cover rounded-full border" alt="Dan Schulman">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Dan Schulman</h3>
+                                            <p class="text-gray-500 text-md">CEO of PayPal</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Quam pellentesque nec nam aliquam
+                                        sem
+                                        et tortor consequat id. Enim sit amet venenatis urna cursus.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg ring-1 bg-slate-800 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img
+                                            src="https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_400x400.jpg"
+                                            class="w-12 h-12 bg-center bg-cover rounded-full border"
+                                            alt="Satya Nadella">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Satya Nadella</h3>
+                                            <p class="text-gray-500 text-md">CEO of Microsoft</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Tortor dignissim convallis aenean et
+                                        tortor at. At ultrices mi tempus imperdiet nulla malesuada. Id cursus metus
+                                        aliquam
+                                        eleifend mi. Quis ipsum suspendisse ultrices gravida dictum fusce ut.</p>
+                                </div>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg ring-1 bg-slate-800 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img
+                                            src="https://pbs.twimg.com/profile_images/516916920482672641/3jCeLgFb_400x400.jpeg"
+                                            class="w-12 h-12 bg-center bg-cover rounded-full border" alt="Dan Schulman">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Dan Schulman</h3>
+                                            <p class="text-gray-500 text-md">CEO of PayPal</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Quam pellentesque nec nam aliquam
+                                        sem
+                                        et tortor consequat id. Enim sit amet venenatis urna cursus.</p>
+                                </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer" class="pb-10 bg-gray-900 lg:pt-20">
+        <!-- final call to action -->
+        <div class="py-10 mx-auto max-w-2xl text-white">
+            <div class="text-center">
+                <h3 class="mb-3 text-3xl"> Talk to us today </h3>
+                <p> You decide, we help you achieve it </p>
+                <div class="flex justify-center my-10">
+                    <a href="https://www.facebook.com/imawanish5"
+                        class="flex items-center px-4 py-2 mx-2 w-52 w-auto rounded-lg border">
+                        <img alt="meta facebook messenger icon" src="/res/messenger.png" class="w-7 md:w-8">
+                        <div class="ml-3 text-left">
+                            <p class="text-xs text-gray-200"> Contact us on </p>
+                            <p class="text-sm md:text-base"> Messenger </p>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/nep_thegermanguy"
+                        class="flex items-center px-4 py-2 mx-2 w-44 w-auto rounded-lg border">
+                        <img alt="meta instagram icon" src="/res/instagram.png" class="w-7 md:w-8">
+                        <div class="ml-3 text-left">
+                            <p class="text-xs text-gray-200"> Like us on</p>
+                            <p class="text-sm md:text-base"> Instagram </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="block ml-auto text-center text-white">
+            <details class="inline-block mb-10 text-left">
+                <summary class="text-center cursor-pointer">Impressum</summary>
+                The German Guy<br>
+                Mühlenweg 34a<br>
+                15232 Frankfurt(Oder), Germany<br>
+                Email: <a href="mailto:contact@thegermanguy.org" class="underline">contact@thegermanguy.org</a><br>
+                Name der entgegennehmenden Stelle: Stadt Frankfurt(Oder)<br>
+                VAT ID Number XXXXX<br>
+                Representative: Awanish Srivastava<br>
+            </details>
+            <p class="">Copyright &copy; 2023. All Right Reserved by TheGermanGuy &trade;</p>
+        </div>
+    </footer>
+    <!-- credit to developer -->
+    <p class="py-2 text-lg text-center text-white bg-gray-800">Gifted with <i
+            class="px-2 text-red-700 fa-solid fa-heart"></i> by <a target="_blank" href="https://me.sudipg.com.np"
+            class="underline">Sudip
+            Ghimire</a>
+    </p>
+</body>
+
+</html>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Visa Types - The German guy</title>
+    <title>Services - The German guy</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="/dist/tailwind.css" rel="stylesheet">
@@ -34,7 +34,7 @@
             <div
                 class="hidden flex-col mt-4 space-y-2 menu-item lg:inline-flex lg:-mx-6 lg:mt-0 lg:flex-row lg:space-y-0">
                 <div class="relative text-gray-800 lg:px-6 group">
-                    <span class="cursor-pointer select-none dropdown-nav hover:text-pink-500" tabindex="0"
+                    <span class="text-pink-500 cursor-pointer select-none dropdown-nav" tabindex="0"
                         onclick="toggleDropdownNav(this)">Services <i class="fa-solid fa-caret-down"></i></span>
                     <div
                         class="inline-flex overflow-hidden absolute top-0 left-0 flex-col p-0 px-4 mt-8 w-max rounded shadow-md bg-primary">
@@ -46,15 +46,19 @@
                 <a class="text-gray-800 lg:px-6 hover:text-pink-500" href="#service">Pricing</a>
                 <a class="text-gray-800 lg:px-6 hover:text-pink-500" href="#faq">FAQ</a>
                 <div class="relative text-gray-800 lg:px-6 group">
-                    <span class="text-pink-500 cursor-pointer select-none dropdown-nav" tabindex="0"
+                    <span class="cursor-pointer select-none hover:text-pink-500 dropdown-nav" tabindex="0"
                         onclick="toggleDropdownNav(this)">Visa Type <i class="fa-solid fa-caret-down"></i></span>
                     <div
                         class="inline-flex overflow-hidden absolute top-0 left-0 flex-col p-0 px-4 mt-8 w-max rounded shadow-md bg-primary">
-                        <a href="visa-types.html#bachelors" class="p-1 pt-3 cursor-pointer hover:text-pink-500">Bachelors Student</a>
-                        <a href="visa-types.html#masters" class="p-1 pt-3 cursor-pointer hover:text-pink-500">Masters Student</a>
-                        <a href="visa-types.html#ausbildung" class="p-1 cursor-pointer hover:text-pink-500">Ausbildung</a>
+                        <a href="visa-types.html#bachelors"
+                            class="p-1 pt-3 cursor-pointer hover:text-pink-500">Bachelors Student</a>
+                        <a href="visa-types.html#masters" class="p-1 pt-3 cursor-pointer hover:text-pink-500">Masters
+                            Student</a>
+                        <a href="visa-types.html#ausbildung"
+                            class="p-1 cursor-pointer hover:text-pink-500">Ausbildung</a>
                         <a href="visa-types.html#au-pair" class="p-1 cursor-pointer hover:text-pink-500">Au-pair</a>
-                        <a href="visa-types.html#skilled-worker" class="p-1 pb-3 cursor-pointer hover:text-pink-500">High
+                        <a href="visa-types.html#skilled-worker"
+                            class="p-1 pb-3 cursor-pointer hover:text-pink-500">High
                             Skilled Work permit</a>
                     </div>
                 </div>
@@ -86,49 +90,60 @@
         </nav>
     </section>
 
-    <!--cardboard to showcase visa type-->
-    <section class="bg-[url('/res/plane-as-bg.png')] bg-cover bg-center bg-no-repeat py-10">
-        <div class="pt-10 text-center">
-            <h1 class="text-5xl font-bold tracking-wide">Dependable and Trustworthy Visa &amp;<br><span
-                    class="text-slate-600">Immigration Guidance</span></h1>
-            <p class=""></p>
-        </div>
 
-        <div class="flex flex-row flex-wrap justify-around content-center pt-12 align-middle">
-            <div class="px-12 py-10 m-5 bg-white rounded-2xl shadow-xl transition-all cursor-pointer hover:shadow-2xl">
-                <i class="block p-4 text-4xl text-white bg-pink-400 rounded-full fa-regular fa-paper-plane"></i>
-                <span class="block mt-6 text-2xl">Job seeker visa</span>
-                <p class="pt-5">Embarking on a journey of higher education in a foreign country opens doors to...</p>
-            </div>
-
-            <div class="px-12 py-10 m-5 bg-white rounded-2xl shadow-xl transition-all cursor-pointer hover:shadow-2xl">
-                <i class="block p-4 text-4xl text-white bg-blue-400 rounded-full fa-solid fa-graduation-cap"></i>
-                <span class="block mt-6 text-2xl">Student Visa</span>
-                <p class="pt-5">Embarking on a journey of higher education in a foreign country opens doors to...</p>
-            </div>
-
-            <div class="px-12 py-10 m-5 bg-white rounded-2xl shadow-xl transition-all cursor-pointer hover:shadow-2xl">
-                <i class="block p-4 text-4xl text-white bg-green-400 rounded-full fa-solid fa-house-chimney"></i>
-                <span class="block mt-6 text-2xl">Au-pair visa</span>
-                <p class="pt-5">Embarking on a journey of higher education in a foreign country opens doors to...</p>
-            </div>
-
-
-            <div class="px-12 py-10 m-5 bg-white rounded-2xl shadow-xl transition-all cursor-pointer hover:shadow-2xl">
-                <i class="block p-4 text-4xl text-white bg-violet-400 rounded-full fa-solid fa-syringe"></i>
-                <span class="block mt-6 text-2xl">Ausbuldung Visa</span>
-                <p class="pt-5">Embarking on a journey of higher education in a foreign country opens doors to...</p>
-            </div>
-
-            <div class="px-12 py-10 m-5 bg-white rounded-2xl shadow-xl transition-all cursor-pointer hover:shadow-2xl">
-                <i class="block p-4 text-4xl text-white bg-yellow-400 rounded-full fa-regular fa-paper-plane"></i>
-                <span class="block mt-6 text-2xl">Skilled professional visa</span>
-                <p class="pt-5">Embarking on a journey of higher education in a foreign country opens doors to...</p>
-            </div>
+    <!-- Consuling -->
+    <section class="p-5 my-10 bg-white shadow-xl transition-all hover:bg-white lg:mx-10 lg:p-10">
+        <h1 class="my-4 text-3xl">Consuling</h1>
+        <div class="flex flex-col flex-nowrap justify-center content-center items-center align-middle lg:flex-row">
+            <img class="" src="/res/women-consuling.png"
+                alt="Women consuling another women about immigration to germany">
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. In cupiditate vel numquam delectus
+                eveniet officiis quidem tenetur aliquid nesciunt voluptatum, mollitia ad laudantium eius laborum illo
+                illum porro similique rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dignissimos
+                necessitatibus blanditiis, molestiae sit eius deserunt beatae. Laboriosam aut incidunt laborum? Veniam,
+                molestiae. Repellendus quasi, nemo non minus sit unde?
+                <a href="#service"
+                    class="block py-4 pl-10 mt-4 w-max bg-gray-800 rounded-full border-2 border-gray-800 border-solid transition-all duration-300 text-primary center hover:bg-primary hover:text-gray-800">Get
+                    started <i class="pr-8 pl-2 fa-solid fa-arrow-right"></i></a>
+            </p>
         </div>
     </section>
 
+    <!-- Language Classes -->
+    <section class="p-5 my-10 bg-white shadow-xl lg:mx-10 lg:p-10">
+        <h1 class="my-4 text-3xl">Language Classes</h1>
+        <div class="flex flex-col flex-nowrap justify-center content-center items-center align-middle lg:flex-row-reverse">
+            <img class="" src="/res/women-consuling.png"
+                alt="Women consuling another women about immigration to germany">
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. In cupiditate vel numquam delectus
+                eveniet officiis quidem tenetur aliquid nesciunt voluptatum, mollitia ad laudantium eius laborum illo
+                illum porro similique rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dignissimos
+                necessitatibus blanditiis, molestiae sit eius deserunt beatae. Laboriosam aut incidunt laborum? Veniam,
+                molestiae. Repellendus quasi, nemo non minus sit unde?
+                <a href="#service"
+                    class="block py-4 pl-10 mt-4 w-max bg-gray-800 rounded-full border-2 border-gray-800 border-solid transition-all duration-300 text-primary center hover:bg-primary hover:text-gray-800">Get
+                    started <i class="pr-8 pl-2 fa-solid fa-arrow-right"></i></a>
+            </p>
+        </div>
+    </section>
 
+    <!-- After-arrival setup -->
+    <section class="p-5 my-10 bg-white shadow-xl lg:mx-10 lg:p-10">
+        <h1 class="my-4 text-3xl">After arrival setup</h1>
+        <div class="flex flex-col flex-nowrap justify-center content-center items-center align-middle lg:flex-row">
+            <img class="" src="/res/women-consuling.png"
+                alt="Women consuling another women about immigration to germany">
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. In cupiditate vel numquam delectus
+                eveniet officiis quidem tenetur aliquid nesciunt voluptatum, mollitia ad laudantium eius laborum illo
+                illum porro similique rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dignissimos
+                necessitatibus blanditiis, molestiae sit eius deserunt beatae. Laboriosam aut incidunt laborum? Veniam,
+                molestiae. Repellendus quasi, nemo non minus sit unde?
+                <a href="#service"
+                    class="block py-4 pl-10 mt-4 w-max bg-gray-800 rounded-full border-2 border-gray-800 border-solid transition-all duration-300 text-primary center hover:bg-primary hover:text-gray-800">Get
+                    started <i class="pr-8 pl-2 fa-solid fa-arrow-right"></i></a>
+            </p>
+        </div>
+    </section>
 
     <!-- footer -->
     <footer id="footer" class="pb-10 bg-gray-900 lg:pt-20">
