@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 @layer components {
-    .dropdown-nav + div {
-        @apply z-10 max-h-0 group-focus:max-h-max;
-    }
+  .dropdown-nav + div {
+    @apply z-10 max-h-0 group-focus:max-h-max;
+  }
 
-    .dropdown-nav + div.rolled-down {
-        @apply max-h-max;
-    }
+  .dropdown-nav + div.rolled-down {
+    @apply max-h-max;
+  }
 }
