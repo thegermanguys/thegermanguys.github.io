@@ -26,6 +26,11 @@ jobs:
           cp -r ./res/ public/res && tree
           rm ./public/input.css && tree
 
+      - name: remove node modules
+        run: |
+          rm -rf ./node_modules
+
+
       - name: minify site
         run: |
           sudo apt update
