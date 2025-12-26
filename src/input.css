@@ -2,7 +2,7 @@
 
 @layer components {
   .dropdown-nav + div {
-    @apply z-10 max-h-0vh group-focus:max-h-max;
+    @apply z-10 group-focus:max-h-max;
   }
 
   .dropdown-nav + div.rolled-down {
