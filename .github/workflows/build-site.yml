@@ -15,7 +15,7 @@ jobs:
 
       - name: Build tailwindcss
         run: |
-          npm install -D tailwindcss
+          npm install -D tailwindcss tailwindcss/cli
           npx tailwindcss -i ./src/input.css -o ./dist/tailwind.css
 
       - name: layout site
